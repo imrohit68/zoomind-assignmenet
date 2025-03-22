@@ -44,7 +44,7 @@ public class TestCaseServiceImpl implements TestCaseService {
                     return new NotFoundException("Test case not found with id: " + id);
                 });
     }
-
+    @CacheEvict(value = {"testCases", "testCasesList"}, key = "#id", allEntries = true)
     @Override
     public void deleteTestCaseById(String id) throws NotFoundException {
         log.info("Attempting to delete test case with ID: {}", id);
@@ -56,7 +56,7 @@ public class TestCaseServiceImpl implements TestCaseService {
         log.info("Test case deleted successfully with ID: {}", id);
     }
 
-    @CacheEvict(value = "testCases", key = "#id")
+    @CacheEvict(value = {"testCases", "testCasesList"}, key = "#id", allEntries = true)
     @Override
     public TestCaseResponse updateTestCaseById(String id, TestCaseRequest testCaseRequest) throws NotFoundException {
         log.info("Updating test case with ID: {}", id);
