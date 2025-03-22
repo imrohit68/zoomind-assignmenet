@@ -92,7 +92,7 @@ mvn spring-boot:run
 ```
 
 ### 3⃣ Running Tests
-To execute tests, ensure MongoDB is running and execute:
+To execute tests, ensure docker(for test containers) is running and execute:
 
 ```sh
 mvn test
