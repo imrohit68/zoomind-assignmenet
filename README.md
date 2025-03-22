@@ -36,6 +36,41 @@ This is a **Test Case Management Service** built using **Spring Boot, MongoDB, R
   - Avoids multiple redundant endpoints for each filter combination.
   - Enhances usability while keeping the implementation efficient.
 
+## 📂 Project Structure
+
+```
+src/
+├── main/
+│   ├── java/com.example.ZoomindAssignment/
+│   │   ├── Config/
+│   │   │   └── CacheConfig.java
+│   │   ├── Controller/
+│   │   │   └── TestCaseController.java
+│   │   ├── DataTranferObjects/
+│   │   │   ├── TestCaseRequest.java
+│   │   │   └── TestCaseResponse.java
+│   │   ├── Enums/
+│   │   │   ├── Priority.java
+│   │   │   └── Status.java
+│   │   ├── Exceptions/
+│   │   ├── Models/
+│   │   │   └── TestCaseModel.java
+│   │   ├── Repository/
+│   │   │   └── TestCaseRepository.java
+│   │   ├── Service/
+│   │   │   ├── Implementation/
+│   │   │   │   └── TestCaseServiceImpl.java
+│   │   │   └── TestCaseService.java
+│   │   └── ZoomindAssignmentApplication.java
+│   └── resources/
+│       └── application.properties
+└── test/
+    └── java/com.example.ZoomindAssignment/
+        ├── IntegrationTests/
+        ├── RepositoryTests/
+        └── ServiceTests/
+```
+
 ## 🤔 Running Locally (Without Docker)
 
 ### 1⃣ Set Up Environment Variables
@@ -141,6 +176,8 @@ After starting the services, access the Swagger UI documentation at:
 ```
 http://localhost:8080/swagger-ui/index.html
 ```
+
+
 
 ## 🚀 Future Improvements
 
