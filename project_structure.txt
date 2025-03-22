@@ -1,0 +1,145 @@
+.
+├── .gitattributes
+├── .gitignore
+├── .idea
+│   ├── .gitignore
+│   ├── compiler.xml
+│   ├── encodings.xml
+│   ├── jarRepositories.xml
+│   ├── misc.xml
+│   ├── uiDesigner.xml
+│   └── workspace.xml
+├── .mvn
+│   └── wrapper
+│       └── maven-wrapper.properties
+├── HELP.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── project_structure.txt
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── example
+│   │   │           └── ZoomindAssignment
+│   │   │               ├── Config
+│   │   │               │   └── CacheConfig.java
+│   │   │               ├── Controller
+│   │   │               │   └── TestCaseController.java
+│   │   │               ├── DataTranferObjects
+│   │   │               │   ├── ErrorResponse.java
+│   │   │               │   ├── TestCaseRequest.java
+│   │   │               │   └── TestCaseResponse.java
+│   │   │               ├── Enums
+│   │   │               │   ├── Priority.java
+│   │   │               │   └── Status.java
+│   │   │               ├── Exceptions
+│   │   │               │   ├── CustomException
+│   │   │               │   │   └── NotFoundException.java
+│   │   │               │   └── GlobalException.java
+│   │   │               ├── Factory
+│   │   │               │   └── TestCaseFactory.java
+│   │   │               ├── Models
+│   │   │               │   └── TestCaseModel.java
+│   │   │               ├── Repository
+│   │   │               │   └── TestCaseRepository.java
+│   │   │               ├── Service
+│   │   │               │   ├── Implementation
+│   │   │               │   │   └── TestCaseServiceImpl.java
+│   │   │               │   └── TestCaseService.java
+│   │   │               └── ZoomindAssignmentApplication.java
+│   │   └── resources
+│   │       ├── application.properties
+│   │       ├── static
+│   │       └── templates
+│   └── test
+│       └── java
+│           └── com
+│               └── example
+│                   └── ZoomindAssignment
+│                       ├── Config
+│                       │   └── TestCacheConfig.java
+│                       ├── IntegrationTests
+│                       │   ├── ExceptionHandlingIT.java
+│                       │   └── TestCaseControllerIT.java
+│                       ├── RepositoryTests
+│                       │   └── TestCaseRepositoryUT.java
+│                       ├── ServiceTests
+│                       │   └── TestCaseServiceUT.java
+│                       └── ZoomindAssignmentApplicationTests.java
+└── target
+    ├── ZoomindAssignment-0.0.1-SNAPSHOT.jar
+    ├── ZoomindAssignment-0.0.1-SNAPSHOT.jar.original
+    ├── classes
+    │   ├── application.properties
+    │   └── com
+    │       └── example
+    │           └── ZoomindAssignment
+    │               ├── Config
+    │               │   └── CacheConfig.class
+    │               ├── Controller
+    │               │   └── TestCaseController.class
+    │               ├── DataTranferObjects
+    │               │   ├── ErrorResponse.class
+    │               │   ├── TestCaseRequest.class
+    │               │   └── TestCaseResponse.class
+    │               ├── Enums
+    │               │   ├── Priority.class
+    │               │   └── Status.class
+    │               ├── Exceptions
+    │               │   ├── CustomException
+    │               │   │   └── NotFoundException.class
+    │               │   └── GlobalException.class
+    │               ├── Factory
+    │               │   └── TestCaseFactory.class
+    │               ├── Models
+    │               │   └── TestCaseModel.class
+    │               ├── Repository
+    │               │   └── TestCaseRepository.class
+    │               ├── Service
+    │               │   ├── Implementation
+    │               │   │   └── TestCaseServiceImpl.class
+    │               │   └── TestCaseService.class
+    │               └── ZoomindAssignmentApplication.class
+    ├── generated-sources
+    │   └── annotations
+    ├── generated-test-sources
+    │   └── test-annotations
+    ├── maven-archiver
+    │   └── pom.properties
+    ├── maven-status
+    │   └── maven-compiler-plugin
+    │       ├── compile
+    │       │   └── default-compile
+    │       │       ├── createdFiles.lst
+    │       │       └── inputFiles.lst
+    │       └── testCompile
+    │           └── default-testCompile
+    │               ├── createdFiles.lst
+    │               └── inputFiles.lst
+    ├── surefire-reports
+    │   ├── TEST-com.example.ZoomindAssignment.Controller.TestCaseControllerIT.xml
+    │   ├── TEST-com.example.ZoomindAssignment.Repository.TestCaseRepositoryUT.xml
+    │   ├── TEST-com.example.ZoomindAssignment.Service.TestCaseServiceUT.xml
+    │   ├── TEST-com.example.ZoomindAssignment.ZoomindAssignmentApplicationTests.xml
+    │   ├── com.example.ZoomindAssignment.Controller.TestCaseControllerIT.txt
+    │   ├── com.example.ZoomindAssignment.Repository.TestCaseRepositoryUT.txt
+    │   ├── com.example.ZoomindAssignment.Service.TestCaseServiceUT.txt
+    │   └── com.example.ZoomindAssignment.ZoomindAssignmentApplicationTests.txt
+    └── test-classes
+        └── com
+            └── example
+                └── ZoomindAssignment
+                    ├── Config
+                    │   └── TestCacheConfig.class
+                    ├── Controller
+                    │   ├── GlobalExceptionHandlerIT.class
+                    │   └── TestCaseControllerIT.class
+                    ├── Repository
+                    │   └── TestCaseRepositoryUT.class
+                    ├── Service
+                    │   └── TestCaseServiceUT.class
+                    └── ZoomindAssignmentApplicationTests.class
+
+69 directories, 74 files
