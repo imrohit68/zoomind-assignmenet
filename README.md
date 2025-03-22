@@ -49,10 +49,16 @@ src/
 │   │   ├── DataTranferObjects/
 │   │   │   ├── TestCaseRequest.java
 │   │   │   └── TestCaseResponse.java
+│   │   │   └── ErrorResponse.java
 │   │   ├── Enums/
 │   │   │   ├── Priority.java
 │   │   │   └── Status.java
 │   │   ├── Exceptions/
+│   │   │   ├── CustomExceptions/
+│   │   │   │   └── NotFoundException.java
+│   │   │   ├── GlobalException.java
+│   │   ├── Factory/
+│   │   │   └── TestCaseFactory.java
 │   │   ├── Models/
 │   │   │   └── TestCaseModel.java
 │   │   ├── Repository/
@@ -73,7 +79,15 @@ src/
 
 ## 🤔 Running Locally (Without Docker)
 
-### 1⃣ Set Up Environment Variables
+### 1⃣ Clone the Repository
+Clone the project repository to your local machine:
+
+```sh
+git clone https://github.com/yourusername/zoomind-assignment.git
+cd zoomind-assignment
+```
+
+### 2⃣ Set Up Environment Variables
 Before running the application, set up the required environment variables:
 
 ```sh
@@ -83,7 +97,7 @@ export REDIS_PORT=your-redis-port
 export REDIS_PASSWORD=your-redis-password
 ```
 
-### 2⃣ Run with Maven
+### 3⃣ Run with Maven
 Ensure you have **Java 17+** and **Maven** installed.
 
 ```sh
@@ -91,14 +105,14 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-### 3⃣ Running Tests
+### 4⃣ Running Tests
 To execute tests, ensure docker(for test containers) is running and execute:
 
 ```sh
 mvn test
 ```
 
-### 4⃣ Access the Application
+### 5⃣ Access the Application
 Once the application is running, you can access the Swagger UI documentation at:
 
 ```
