@@ -42,10 +42,10 @@ This is a **Test Case Management Service** built using **Spring Boot, MongoDB, R
 Before running the application, set up the required environment variables:
 
 ```sh
-export MONGO_URI=mongodb://localhost:27017/testcase-db
-export REDIS_HOST=localhost
-export REDIS_PORT=6379
-export SERVER_PORT=8080
+export MONGO_URI=your-database-uri
+export REDIS_HOST=your-redis-host
+export REDIS_PORT=your-redis-port
+export REDIS_PASSWORD=your-redis-password
 ```
 
 ### 2⃣ Run with Maven
@@ -61,6 +61,13 @@ To execute tests, ensure MongoDB is running and execute:
 
 ```sh
 mvn test
+```
+
+### 4⃣ Access the Application
+Once the application is running, you can access the Swagger UI documentation at:
+
+```
+http://localhost:8080/swagger-ui/index.html
 ```
 
 ---
@@ -106,6 +113,7 @@ services:
       MONGO_URI: mongodb://mongo:27017/testcase-db
       REDIS_HOST: redis
       REDIS_PORT: 6379
+      REDIS_PASSWORD: your-redis-password
       SERVER_PORT: 8080
 ```
 
@@ -126,6 +134,14 @@ To stop the running containers:
 ```sh
 docker-compose down
 ```
+
+### 5⃣ Access the Application
+After starting the services, access the Swagger UI documentation at:
+
+```
+http://localhost:8080/swagger-ui/index.html
+```
+
 ## 🚀 Future Improvements
 
 - **Bulk Operations**: Support batch creation and deletion of test cases.
