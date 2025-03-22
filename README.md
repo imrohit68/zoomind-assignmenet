@@ -148,7 +148,6 @@ services:
       MONGO_URI: mongodb://mongo:27017/testcase-db
       REDIS_HOST: redis
       REDIS_PORT: 6379
-      REDIS_PASSWORD: your-redis-password
       SERVER_PORT: 8080
 ```
 
