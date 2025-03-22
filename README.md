@@ -1,8 +1,8 @@
-# Zoomind Assignment - Test Case Management Service
+# Zomind Assignment - Test Case Management Service
 
 ## 🚀 Live Deployment
 The application is deployed at:
-👉 [Zoomind Assignment - Live](https://zoomind-assignment.onrender.com/swagger-ui/index.html)
+👉 [Zomind Assignment - Live](https://zoomind-assignment.onrender.com/swagger-ui/index.html)
 
 ## 🐜 Overview
 This is a **Test Case Management Service** built using **Spring Boot, MongoDB, Redis, and Docker**. It allows users to create, manage, and retrieve test cases efficiently.
