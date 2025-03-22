@@ -40,7 +40,7 @@ public class TestCaseServiceImpl implements TestCaseService {
         return testCaseRepository.findById(id)
                 .map(TestCaseFactory::toResponse)
                 .orElseThrow(() -> {
-                    log.warn("Test case not found with ID: {}", id);  // ✅ Use WARN instead of ERROR
+                    log.warn("Test case not found with ID: {}", id);
                     return new NotFoundException("Test case not found with id: " + id);
                 });
     }
@@ -49,7 +49,7 @@ public class TestCaseServiceImpl implements TestCaseService {
     public void deleteTestCaseById(String id) throws NotFoundException {
         log.info("Attempting to delete test case with ID: {}", id);
         if (!testCaseRepository.existsById(id)) {
-            log.warn("Delete failed - Test case not found with ID: {}", id);  // ✅ WARN instead of ERROR
+            log.warn("Delete failed - Test case not found with ID: {}", id); 
             throw new NotFoundException("Test case not found with id: " + id);
         }
         testCaseRepository.deleteById(id);
@@ -61,7 +61,7 @@ public class TestCaseServiceImpl implements TestCaseService {
     public TestCaseResponse updateTestCaseById(String id, TestCaseRequest testCaseRequest) throws NotFoundException {
         log.info("Updating test case with ID: {}", id);
         if (!testCaseRepository.existsById(id)) {
-            log.warn("Update failed - Test case not found with ID: {}", id);  // ✅ WARN instead of ERROR
+            log.warn("Update failed - Test case not found with ID: {}", id); 
             throw new NotFoundException("Test case not found with id: " + id);
         }
         TestCaseModel testCaseModel = TestCaseFactory.createTestCase(id, testCaseRequest);
